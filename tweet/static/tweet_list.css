@@ -1,0 +1,255 @@
+/* Base styling for body */
+body {
+    background: #1a2428; /* Darker blue background for better contrast */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif; /* Clean, modern font */
+    color: #e0e0e0; /* Light gray text color for better readability */
+    position: relative; /* Required for pseudo-element positioning */
+}
+
+/* Beam Light Effect */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 50%),
+                linear-gradient(45deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    background-blend-mode: overlay;
+    pointer-events: none; /* Allows interactions with underlying content */
+    z-index: 1; /* Ensures it stays on top of the background */
+    mix-blend-mode: screen; /* Blends the light effect with the background */
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width of the page */
+    display: flex;
+    justify-content: left; /* Space out the items */
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.3); /* Light border */
+    background: rgba(27, 38, 49, 0.9); /* Semi-transparent dark background */
+    z-index: 1000; /* Ensures the navbar is on top of other elements */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.navbar:hover {
+    background: rgba(18, 18, 18, 0.9); /* Darker background on hover */
+}
+
+.navbar .tweetbar {
+    text-decoration: none;
+    font-size: 28px;
+    color: #e0e0e0; /* Light gray text color */
+    display: flex;
+    align-items: center;
+}
+
+.navbar .tweetbar i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 40px; /* Adjust icon size */
+}
+
+.navbar .btn {
+    margin-left: 10px;
+    background-color: #007bff; /* Primary button color */
+    color: #e0e0e0; /* Light gray text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.navbar .btn-primary {
+    background-color: #007bff; /* Primary button color */
+}
+
+.navbar .btn-primary:hover {
+    background-color: #0056b3; /* Darker blue for primary button hover */
+}
+
+.navbar .btn-danger {
+    background-color: #e53935; /* Danger button color */
+    margin-left: 730px;
+}
+
+.navbar .btn-danger:hover {
+    background-color: #c62828; /* Darker red for danger button hover */
+}
+
+.navbar .btn-warning {
+    background-color: #fbc02d; /* Warning button color */
+}
+
+.navbar .btn-warning:hover {
+    background-color: #f9a825; /* Darker yellow for warning button hover */
+}
+
+/* Container Styling */
+.container {
+    margin-top: 25px;
+    position: fixed; /* Fixes the container in the middle of the page */
+    top: 50%;
+    left: 62%;
+    transform: translate(-50%, -50%); /* Centers the container */
+    display: flex;
+    flex-wrap: wrap; /* Align items vertically */
+    align-items: center;
+    width: 905px; /* Adjusted width */
+    height: 80vh; /* Height of the container */
+    padding: 15px;
+    border-radius: 20px;
+    background: #34495e; /* Semi-transparent dark color */
+    backdrop-filter: blur(12px); /* Enhanced blur effect */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Enhanced shadow for depth */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Slightly visible border */
+    overflow-y: auto; /* Allows vertical scrolling */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    gap: 20px;
+    z-index: 2; /* Ensures the container is above the light beam effect */
+}
+
+.main-container {
+    background: #1a2428;
+    height: 0px;
+}
+
+/* Tweets Wrapper */
+.tweets-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    gap: 15px; /* Space between items */
+    align-content: flex-start; /* Align rows at the top */
+    width: 100%; /* Full width of the container */
+}
+
+/* Card Styling */
+.card {
+    background:transparent; /* Slightly transparent dark background */
+    color: #e0e0e0; /* Light gray text color */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Light border for card */
+    margin: 0; /* Remove default margin */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow with depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+    text-align: left; /* Align text to the left */
+    position: relative; /* To position title at the top-left */
+    width: calc(33.333% - 15px); /* Adjust width to fit three cards per row with gap */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.card-img-top {
+    height: 240px; /* Fixed height */
+    width: 100%;  /* Full width */
+    object-fit: cover; /* Ensure the image covers the space */
+    border-radius: 8px; /* Rounded corners for images */
+    margin-bottom: 10px; /* Space between image and text */
+    margin-top: 15px;
+}
+
+.card-title {
+    font-size: 22px; /* Slightly smaller font size for titles */
+    margin: 0; /* No margin */
+    color: #e0e0e0; /* Light gray text color */
+}
+
+.card-text {
+    font-size: 17px; /* Slightly larger text for readability */
+    margin-top: 10px; /* Space above the text */
+    color: #e0e0e0; /* Light gray text color */
+}
+
+/* User List Section */
+.user-list {
+    width: 23%; /* Adjust width as needed */
+    padding: 15px;
+    background: #203039  ; /* Dark background color to match the main theme */
+    border-radius: 10px;
+    margin-right: 10px; /* Space between user list and tweets */
+    overflow-y: auto; /* Allows vertical scrolling */
+    height: 60vh; /* Fixed height of the container */
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Border color matches the container */
+    margin-top: 135px;
+    margin-left: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6); /* Shadow to match the container */
+}
+
+/* User List Heading */
+.user-list h1 {
+    margin-left: 100px;
+    font-size: 23px; /* Larger font size for the heading */
+    color: #e0e0e0; /* Light gray text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+/* User Cards */
+.user-card {
+    background: rgba(255, 255, 255, 0.2); /* Slightly transparent background */
+    color: #ecf0f1; /* Light gray text color for readability */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between cards */
+    border-radius: 12px; /* Rounded corners */
+    border: 1px solid rgba(44, 62, 80, 0.3); /* Border color to match the container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Shadow to match the container */
+    text-align: center; /* Center text */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.user-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); /* Enhanced shadow on hover */
+}
+
+.user-card h2 {
+    font-size: 20px; /* Font size for user name */
+    margin: 0; /* Remove margin */
+    color: #e0e0e0; /* Light gray text color */
+}
+
+.user-card p {
+    font-size: 15px; /* Font size for additional details */
+    color: #e0e0e0; /* Light gray text color */
+}
+
+/* Main Content Styling */
+.main-content {
+    position: absolute; /* Position absolute to align it with the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* Hide overflow */
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+/* Footer Styling */
+footer {
+    padding: 10px;
+    background: rgba(27, 38, 49, 0.9); /* Semi-transparent dark background */
+    color: #e0e0e0; /* Light gray text color */
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%; /* Full width of the page */
+    border-top: 2px solid rgba(0, 0, 0, 0.3); /* Light border */
+    z-index: 1000; /* Ensure it stays on top of other elements */
+}
+
+.footer-text {
+    font-size: 16px; /* Font size for footer text */
+}

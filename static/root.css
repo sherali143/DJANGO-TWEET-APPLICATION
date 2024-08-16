@@ -1,0 +1,99 @@
+body {
+    background-image: url('/static/images/background.jpg');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center center; /* Centers the image both horizontally and vertically */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the background image fixed during scrolling */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #333; /* Fallback color if the image doesn't load */
+}
+
+.container {
+    background: #1a2428 ; /* Semi-transparent white with a slight tint */
+    padding: 20px;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow for more depth */
+    width: 420px; /* Full width with some padding */
+    max-width: 420px; /* Maximum width of the container */
+    text-align: center; /* Center text and buttons */
+    position: absolute;
+    left: 75%;
+    top: 48%;
+    transform: translate(-50%, -50%); /* Center the container in the viewport */
+}
+
+/* Styling for headings */
+h1 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: bolder;
+}
+
+/* Styling for buttons */
+a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff; /* Primary button color */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.login:hover {
+    background-color: #28a745; /* Darker color on hover */
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+    .container {
+        padding: 15px; /* Reduced padding on smaller screens */
+        width: 90%; /* Full width with some padding */
+    }
+
+    h1 {
+        font-size: 20px; /* Smaller font size on mobile */
+    }
+
+    a {
+        font-size: 14px; /* Smaller font size on mobile */
+        padding: 10px 20px; /* Adjust padding on smaller screens */
+    }
+}
+
+.register {
+    color: white;
+    background-color: #007bff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.login {
+    color: white;
+    background-color: #28a745;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Responsive adjustments for intro and sherali classes */
+.intro {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Height adjusts based on content */
+    margin: 20px 0; /* Adjust margins */
+}
+

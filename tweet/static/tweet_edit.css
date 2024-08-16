@@ -1,0 +1,78 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #2a2a2a; /* Dark Gray */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Form container styling */
+.container {
+    background-color: #2c2c2c; /* Slightly lighter dark gray */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Headline styling */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #4a90e2; /* Bright Blue */
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styling */
+label {
+    font-size: 14px;
+    color: #e0e0e0; /* Light Gray */
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Input fields styling */
+textarea, input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #444; /* Medium Gray */
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #1c1c1c; /* Slightly darker than form background */
+    color: #f0f0f0; /* Very Light Gray */
+}
+
+/* Textarea specific styling */
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* Button styling */
+.btn {
+    background-color: #4a90e2; /* Bright Blue */
+    color: #f0f0f0; /* Very Light Gray */
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    background-color: #357abd; /* Darker Blue */
+}

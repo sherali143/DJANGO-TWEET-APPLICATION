@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'login_style.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <h1 class="form-heading">Login</h1>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn">Login</button>
+        </form>
+        {% if form.errors %}
+            <p class="form-error">Please correct the errors below.</p>
+        {% endif %}
+        <p>Don't have an account?</p>
+        <a href="{% url 'register' %}" class="form-link">Register</a>
+    </div>
+</body>
+</html>

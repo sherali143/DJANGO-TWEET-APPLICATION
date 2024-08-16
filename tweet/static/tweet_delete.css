@@ -1,0 +1,52 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: #2a2a2a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Button container styling */
+.button-container {
+    text-align: center;
+}
+
+/* Styling for both buttons */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Delete button styling */
+.btn-danger {
+    background-color: #e74c3c; /* Red color */
+}
+
+.btn-danger:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
+
+/* Cancel button styling */
+.btn-cancel {
+    background-color: #3498db; /* Blue color */
+}
+
+.btn-cancel:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.confirmation-text {
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+}
