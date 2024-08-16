@@ -3,7 +3,7 @@ Responsive Tweet Web Application built with Django, featuring user authenticatio
 
 # Tweet Web Application 🐦
 
-This is a responsive web application developed using the Python Django framework that allows users to tweet, edit, and delete their own tweets. The application also handles user authentication and form handling securely, utilizing Django's built-in features.
+This is a web application developed using the Python Django framework that allows users to tweet, edit, and delete their own tweets. The application also handles user authentication and form handling securely, utilizing Django's features.
 
 ## 🔑 Key Features:
 
@@ -79,18 +79,20 @@ Open your browser and navigate to `http://127.0.0.1:8000/`.
 ![LoginPage](https://github.com/user-attachments/assets/9323b5fc-26b3-4a6a-b1c2-95f6ba925713)
 
 ### 2. LoginForm
-![LoginForm](https://github.com/user-attachments/assets/f41fd1a7-add2-4278-9d14-0e41bbd5bd7e)
+![LoginForm](https://github.com/user-attachments/assets/914272b0-b697-4b1b-b487-9cb33acf5edc)
+
 
 ### 3. RegistrationForm
-![RegistrationForm](https://github.com/user-attachments/assets/63fb43e7-8eca-42a2-bca6-d4604c907d5b)
+![RegistrationForm](https://github.com/user-attachments/assets/ce60d224-7fc9-40d6-8c1f-3a852feab5e8)
+
 
 ### 4. HomePage
 ![HomePage](https://github.com/user-attachments/assets/6265f684-859c-487c-bb19-ad2e8bc98934)
 
 ### 5. CreateTweetForm
-![CreateTweetForm](https://github.com/user-attachments/assets/20f65571-c14b-4360-863a-ae59df3252d7)
-
+![CreateTweetForm](https://github.com/user-attachments/assets/72ea75d8-8f20-478b-a897-ff83622a433e)
 
 ### 6. EditTweetForm
-![EditTweetForm](https://github.com/user-attachments/assets/048c503d-5075-42b4-a5e3-5d1fbf3cf968)
+![EditTweetForm](https://github.com/user-attachments/assets/c983568e-437b-4de4-ab35-cc60bf72e9b2)
+
 
