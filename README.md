@@ -49,8 +49,9 @@ This is a responsive web application developed using the Python Django framework
 
 ### 1. Clone the Repository:
 ```bash
-git clone https://github.com/yourusername/tweet-web-application.git
-cd tweet-web-application
+git clone https://github.com/yourusername/DJANGO-TWEET-APPLICATION.git
+cd DJANGO-TWEET-APPLICATION
+
 ```
 
 ### 2. Install Dependencies:
